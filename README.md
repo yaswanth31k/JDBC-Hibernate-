@@ -1,2 +1,2 @@
 # JDBC-Hibernate-
-In this we have the JDBC and Hibernate related programmes 
+In this we have the JDBC , Servlets And Hibernate related programmes 
