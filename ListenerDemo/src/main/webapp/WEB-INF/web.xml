@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <servlet>
+    <description></description>
+    <display-name>First</display-name>
+    <servlet-name>First</servlet-name>
+    <servlet-class>in.careerit.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>First</servlet-name>
+    <url-pattern>/FServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SServlet</display-name>
+    <servlet-name>SServlet</servlet-name>
+    <servlet-class>in.careerit.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SServlet</servlet-name>
+    <url-pattern>/second</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TServlet</display-name>
+    <servlet-name>TServlet</servlet-name>
+    <servlet-class>in.careerit.ThirdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TServlet</servlet-name>
+    <url-pattern>/third</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>
+  		id
+  	</param-name>
+  	<param-value>
+  	1111
+  	</param-value>
+  </context-param>
+    <context-param>
+  	<param-name>
+  		name
+  	</param-name>
+  	<param-value>
+  	yash
+  	</param-value>
+  </context-param>
+    <context-param>
+  	<param-name>
+  		age
+  	</param-name>
+  	<param-value>
+  	23
+  	</param-value>
+  </context-param>
+  
+  <listener>
+    <listener-class>in.careerit.PersonListener</listener-class>
+  </listener>
+</web-app>
